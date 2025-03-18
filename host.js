@@ -8,7 +8,8 @@ const dict = {
     "/WARNING.png":["WARNING.png","image/png"],
     "/favicon.ico":["favicon.png","image/png"],
     "/second.html":["second.html","text/html"],
-    "/prose.html":["prose.html","text/html"]
+    "/prose.html":["prose.html","text/html"],
+    "/style.css":["style.css","text/css"]
 }
 
 const server = createServer(function(req, res){

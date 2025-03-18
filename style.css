@@ -1,13 +1,17 @@
-p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:#ff0088;
-    background:#aaaaee
+a{
+    color:rgb(164, 164, 164);
+    font-weight:10;
+    text-decoration:none;
 }
 
-a{
-    color:white;
-    font-weight:1;
-    text-decoration:none;
+p{
+    color:rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:20px
+}
+
+.wholePage{
+    background-color:#9c0242;
 }
 
 .headWhole{

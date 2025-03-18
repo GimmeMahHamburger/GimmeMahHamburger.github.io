@@ -9,7 +9,8 @@ const dict = {
     "/favicon.ico":["favicon.png","image/png"],
     "/second.html":["second.html","text/html"],
     "/prose.html":["prose.html","text/html"],
-    "/style.css":["style.css","text/css"]
+    "/style.css":["style.css","text/css"],
+    "/programmingProjects.html":["programmingProjects.html","text/html"]
 }
 
 const server = createServer(function(req, res){

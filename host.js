@@ -6,7 +6,8 @@ const dict = {
     "/":["index.html","text/html"],
     "/index.html":["index.html","text/html"],
     "/WARNING.png":["WARNING.png","image/png"],
-    "/favicon.ico":["favicon.png","image/png"]
+    "/favicon.ico":["favicon.png","image/png"],
+    "/second.html":["second.html","text/html"]
 }
 
 const server = createServer(function(req, res){
@@ -30,10 +31,6 @@ const server = createServer(function(req, res){
             return;
         })
     }
-    
-    console.log(Object.keys(dict))
-    console.log(req.url)
-    console.log(dict[req.url])
     sendStuff(dict[req.url][0],dict[req.url][1]);
     
 /*

@@ -7,7 +7,8 @@ a{
 p{
     color:rgb(255, 255, 255);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:20px
+    font-size:20px;
+    opacity:1;
 }
 
 .wholePage{
@@ -26,21 +27,74 @@ p{
     padding: 0;
     overflow: hidden;
     background-color: #41021c;
+
+    
 }
 
 .headerItem{
+    position: relative;
+    top: 0;
+    left: 0;
     float:left;
     display:block;
     padding: 10px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:#ffffff;
+    overflow:hidden;
 }
 
-.headerItem:hover{
+.headerItem::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content:'';
     background:linear-gradient(#6f0230, #3a0219);
+    transition: all 0.4s ease;
+    opacity:0;
+}
+.headerItem:hover::before{
+    opacity:0.5;
 }
 
 .currentPage{
     background:linear-gradient(#6f0230, #3a0219);
 }
 
+.wholeBodyContainer{
+    padding-left:40px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-right:0px;
+    width:100%
+}
+
+.rightSide{
+    margin-left:20px;
+    font-size:30px;
+    margin-right:0px;
+    height:100%;
+    width:40%;
+    float:right;
+    background-color: #8e8e8e;
+}
+
+.rightBar{
+    background-color: #8e8e8e;
+}
+
+.leftSide{
+    margin-left:20px;
+    font-size:30px;
+    float:left;
+}
+
+.collection{
+    width:100%
+}
+
+
+
+
+  

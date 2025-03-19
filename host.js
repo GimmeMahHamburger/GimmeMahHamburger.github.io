@@ -34,24 +34,7 @@ const server = createServer(function(req, res){
             return;
         })
     }
-    sendStuff(dict[req.url][0],dict[req.url][1]);
-    
-/*
-    if (req.url === "/" || req.url === "/index.html") {
-        sendStuff('index.html','text/html');
-        return;
-    } else if (req.url === "/WARNING.png") {
-        sendStuff('WARNING.png','image/png');
-        return;
-    } else if (req.url === "/favicon.ico") {
-        sendStuff('favicon.png','image/png');
-        return;
-    } else {
-        console.log("We don't have "+req.url);
-    }
-*/
-
-    
+    sendStuff(dict[req.url][0],dict[req.url][1]);    
 })
 
 server.listen(port, function(error){
